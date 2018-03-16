@@ -137,10 +137,10 @@ export default {
     },
     showBreviaryImg (idx) {
       this.isArrShow = this.isArrShow.map(e => false)
-      this.isArrShow[idx] = true;
+      this.isArrShow[idx] = true
     },
     clickImg (idx) {
-      this.currentIndex = idx;
+      this.currentIndex = idx
     }
   }
 }

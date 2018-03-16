@@ -25,8 +25,17 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - 2.9.3
 
 
-练习目录：
+# 练习目录：
 
-12-13页
+从12/13页开始：https://miaov.com/index.php/course/detail
 
-https://miaov.com/index.php/course/detail
+# git
+
+```
+echo "# my_vue_test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:wmh1106/my_vue_test.git
+git push -u origin master
+```
