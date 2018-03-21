@@ -7,6 +7,7 @@ import vueSwiper from '@/components/miaov/4_swiper.vue'
 import vueSelect2 from '@/components/miaov/5_list_show.vue'
 import radioVue from '@/components/miaov/6_radio.vue'
 import grade from '@/components/miaov/7_grade.vue'
+import todolist from '@/components/todolist.vue'
 
 Vue.use(Router)
 
@@ -40,5 +41,9 @@ export default new Router({
     path: '/miaov/7_grade',
     name: 'grade',
     component: grade
+  }, {
+    path: '/todolist',
+    name: 'todolist',
+    component: todolist
   }]
 })

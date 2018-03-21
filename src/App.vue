@@ -15,14 +15,24 @@
       <br />
       <router-link to="/miaov/7_grade">7 评分</router-link>
       <br />
+      <router-link to="/todolist">8 todolist</router-link>
+      <br />
     </div>
 
-    <div style="width:300px; margin:0 auto;">
+    <div style="width:550px; margin:0 auto;">
       <router-view />
     </div>
+
+    <!-- <div class="dd">
+      <testChild @childEvent="parentEvent"></testChild>
+    </div> -->
+
   </div>
 </template>
 <script>
+
+import testChild from './components/testChild.vue'
+
 export default {
   data () {
     return {
@@ -30,13 +40,18 @@ export default {
       hh: '我是 hehe'
     }
   },
+  components: {
+    testChild
+  },
   watch: {
     hh: function (newValue, prevValue) {
       console.log('newValue:' + newValue, 'prevValue:' + prevValue)
     }
   },
   methods: {
-
+    parentEvent () {
+      alert('parent')
+    }
   },
   directives: {
 
@@ -57,15 +72,5 @@ export default {
 */
 </script>
 <style>
-body {
-  margin: 0;
-}
-.fade1-enter-active,
-.fade1-leave-active {
-  transition: opacity 0.5s;
-}
-.fade1-enter,
-.fade1-leave-to {
-  opacity: 0;
-}
+
 </style>
