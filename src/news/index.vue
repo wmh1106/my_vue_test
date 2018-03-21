@@ -35,7 +35,6 @@ import footerModule from './components/footer'
 
 import 'static/css/bootstrap.css'
 import '@/news/common/less/index.less'
-
 export default {
   components: {
     headerMove,
