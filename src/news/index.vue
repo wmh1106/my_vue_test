@@ -1,13 +1,17 @@
 <template>
 <div class="news_site">
+  <!-- 移动端头部 -->
   <header-move></header-move>
-  <!-- main -->
+  <!-- 容器 -->
   <div class="main_content">
+    <!-- 头部 -->
     <headerModule></headerModule>
     <!-- 主体 -->
-    <section class="jc_content mt_20 clearfix">
-      <sidebarModule></sidebarModule>
-    </section>
+    <!-- <section class="jc_content mt_20 clearfix"> -->
+      <router-view></router-view>
+    <!-- </section> -->
+
+    <!-- 底部 -->
     <footerModule></footerModule>
   </div>
   <!-- back top -->
@@ -24,17 +28,25 @@
 
 <script>
 
-import headerMove from './news/header_move.vue'
-import headerModule from './news/header.vue'
-import footerModule from './news/footer.vue'
-import sidebarModule from './news/sidebar.vue'
+import headerMove from './components/header_move'
+import headerModule from './components/header'
+
+import footerModule from './components/footer'
+
+import 'static/css/bootstrap.css'
+import './common/less/index.less'
 
 export default {
   components: {
     headerMove,
     headerModule,
-    footerModule,
-    sidebarModule
+    footerModule
   }
 }
 </script>
+
+<style lang="less" scoped>
+.bg_gray {
+  background: #eee;
+}
+</style>

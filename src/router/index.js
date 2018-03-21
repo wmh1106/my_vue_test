@@ -13,12 +13,19 @@ import todolist from '@/components/todolist.vue'
 import miaovList from '@/components/miaovList.vue'
 
 // 项目：新闻站
-import newshome from '@/components/newshome.vue'
+import news from '@/news'
+import home from '@/news/home'
+import fast from '@/news/fast'
+import market from '@/news/market'
+import login from '@/news/login'
+import register from '@/news/register'
+import password from '@/news/password'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
+  linkActiveClass: 'active',
   routes: [{
     path: '/miaov/1_vue_select',
     name: 'vueSelect',
@@ -56,8 +63,31 @@ export default new Router({
     name: 'miaovList',
     component: miaovList
   }, {
-    path: '/newshome',
-    name: 'newshome',
-    component: newshome
+    path: '/news',
+    name: 'news',
+    component: news,
+    redirect: '/news/home',
+    children: [{
+      path: 'home',
+      component: home
+    }, {
+      path: 'fast',
+      component: fast
+    }, {
+      path: 'market',
+      component: market
+    }, {
+      path: 'login',
+      name: 'login',
+      component: login
+    }, {
+      path: 'register',
+      name: 'register',
+      component: register
+    }, {
+      path: 'password',
+      name: 'password',
+      component: password
+    }]
   }]
 })

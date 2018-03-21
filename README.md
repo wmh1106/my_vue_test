@@ -39,3 +39,20 @@ git commit -m "first commit"
 git remote add origin git@github.com:wmh1106/my_vue_test.git
 git push -u origin master
 ```
+
+
+## news 项目
+
+```
+src
+  common
+  news
+    header
+    header_move
+    footer
+    main
+      content
+      sidebar
+    index.vue
+
+```
