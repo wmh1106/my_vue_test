@@ -66,12 +66,14 @@ export default new Router({
     path: '/news',
     name: 'news',
     component: news,
-    redirect: '/news/home',
+    // redirect: '/news/home',
     children: [{
       path: 'home',
+      name: 'home',
       component: home
     }, {
       path: 'fast',
+      name: 'fast',
       component: fast
     }, {
       path: 'market',

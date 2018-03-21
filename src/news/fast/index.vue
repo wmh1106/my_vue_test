@@ -34,7 +34,6 @@
     </section>
 </template>
 <script>
-import mainModule from '../components/main'
 import listFast from '../components/list_fast'
 import navList from '../components/nav_list'
 // 侧边栏
@@ -46,7 +45,6 @@ import todaySpeak from '../components/today_speak'
 
 export default {
   components: {
-    mainModule,
     navList,
     listFast,
     // 侧边栏

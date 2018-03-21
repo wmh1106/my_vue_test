@@ -35,7 +35,6 @@
     </section>
 </template>
 <script>
-import mainModule from '../components/main'
 import banner from '../components/banner'
 import listArticle from '../components/list_article'
 
@@ -49,7 +48,6 @@ import navList from '../components/nav_list'
 
 export default {
   components: {
-    mainModule,
     banner,
     navList,
     listArticle,
