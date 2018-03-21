@@ -34,7 +34,7 @@ import headerModule from './components/header'
 import footerModule from './components/footer'
 
 import 'static/css/bootstrap.css'
-import './common/less/index.less'
+import '@/news/common/less/index.less'
 
 export default {
   components: {
@@ -44,9 +44,3 @@ export default {
   }
 }
 </script>
-
-<style lang="less" scoped>
-.bg_gray {
-  background: #eee;
-}
-</style>

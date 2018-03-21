@@ -1,0 +1,152 @@
+// 文章详情 
+.article_details {
+    .article_header {
+        margin-bottom: 20px;
+        &::after {
+            display: block;
+            content: "";
+            width: 150px;
+            height: 3px;
+            background: #eee;
+        }
+    }
+    .title {
+        margin: 20px 0;
+        font-size: 26px;
+        color: #333;
+    }
+    .other_msg {
+        font-size: 14px;
+        color: #828A92;
+        line-height: 20px;
+        margin: 20px 0;
+        .name {
+            color: #008DF3;
+        }
+        .time,
+        .tag {
+            position: relative;
+            padding-left: 10px;
+            margin-left: 10px;
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: #828A92;
+            }
+        }
+    }
+    .subhead {
+        margin: 20px 0;
+        font-size: 14px;
+        color: #999999;
+    }
+    .article_details_content {
+        line-height: 30px;
+        .img {
+            width: 100%;
+            margin: 20px 0;
+        }
+    }
+}
+
+// 文章详情 —— 声明
+.look_out {
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #999;
+    border: 1px solid #eee;
+    padding: 0 20px;
+    p {
+        margin: 20px 0;
+    }
+    a {
+        font-size: 14px;
+        color: #333;
+        font-weight: bold;
+    }
+}
+
+// 标签
+.type-tag {
+    margin-top: 30px;
+    a {
+        border: 1px solid #008DF3;
+        color: #008DF3;
+        display: block;
+        float: left;
+        font-size: 14px;
+        padding: 2px 18px;
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+// 固定条：作者、赞、评论、分享
+.nav_fixed_box {
+    box-sizing: border-box;
+    height: 60px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    .nav_fixed_item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        &:nth-of-type(1) {
+            justify-content: space-between;
+        }
+    }
+    .person {
+        flex: 1;
+        .img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: green;
+        }
+        .name {
+            font-size: 14px;
+            color: #008DF3;
+        }
+    }
+    .number {
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        .love,
+        .review {
+            color: #D3D7DB;
+            font-size: 14px;
+            i {
+                font-size: 20px;
+            }
+            span {
+                padding-left: 10px;
+            }
+        }
+    }
+    .share_list {
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        border-right: 1px solid #ddd;
+        border-left: 1px solid #ddd;
+        a {
+            display: block;
+            font-size: 30px;
+            color: #D3D7DB;
+        }
+    }
+    .back_top {
+        display: block;
+        font-size: 30px;
+        color: #D3D7DB;
+        margin: 0 20px;
+    }
+}

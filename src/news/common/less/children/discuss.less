@@ -1,0 +1,110 @@
+.discuss_box{
+  .discuss_title{
+    margin:20px 0;
+    border-left:3px solid #008DF3;
+    font-size: 16px;
+    color: #3D464D;
+    padding-left:10px;
+  }
+  .write_discuss{
+    width: 750px;
+    height: 126px;
+    border:1px solid #ddd;
+    .textarea{
+      padding:10px;
+      border: none;
+      resize: none;
+      width:100%;
+      height: 80px;
+      outline: none;
+      &::-webkit-input-placeholder{color:#ddd;}
+      vertical-align: top;
+    }
+    .write_discuss_bottom{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 44px;;
+      background: #f8f8f8;
+      .write_discuss_person{
+        display: block;
+        margin-left:5px;
+        margin-right:15px;
+        img{
+          width:30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+        span{
+          font-size: 14px;
+          color: #008DF3;
+          letter-spacing: 0;
+          text-shadow: 0 1px 0 rgba(255,255,255,0.50);
+        }
+        em{
+          font-style: normal;
+        }
+        strong{
+          color:#ccc;
+        }
+      }
+      .discuss_user_name{
+        span{
+          height: 28px;
+          background: #008DF3;
+          color:#fff;
+          border-radius: 5px;
+          padding:4px 8px;
+          font-size: 12px;
+        }
+      }
+      .submit_discuss_btn{
+        height: 28px;
+        line-height: 28px;
+        background: #008DF3;
+        color:#fff;
+        border-radius: 5px;
+        padding:0 8px;
+        font-size: 12px;
+        margin-right:20px;
+      }
+    }
+  }
+  .discuss_list{
+    display: flex;
+    padding:15px 0;
+    border-bottom: 1px solid #ddd;
+    .user_discuss_img{
+      width:48px;
+      height: 48px;
+      border-radius: 50%;
+      margin:0 15px;
+      background: #ddd;
+    }
+    .user_discuss_box{
+      .user_discuss_header{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom:10px;
+        .time{
+          color:#ddd;
+        }
+        .love{
+          color:#ddd;
+          padding-right:10px;
+          &.active{
+            color:#008DF3;
+          }
+        }
+        .reply{
+          color:#008DF3;
+        }
+      }
+      .user_discuss_content{
+        font-size: 14px;
+        color: #3D464D;
+        line-height: 21px;
+      }
+    }
+  }
+}
