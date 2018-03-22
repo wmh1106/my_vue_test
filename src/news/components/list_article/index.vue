@@ -3,7 +3,7 @@
         <div class="article_box">
           <ul class="article_list">
             <li>
-              <a href="###">
+              <router-link to="detaile">
                 <img class="img" src="../../common/images/img/banner1.jpg" alt="">
                 <div class="article_content">
                   <h2 class="article_title">36氪独家 | 区块链公司「布比」完成1亿元A轮融资，深耕“区块链+供应链金融”新业态</h2>
@@ -14,9 +14,20 @@
                     <span>虚拟币</span>
                   </p>
                 </div>
-              </a>
+              </router-link>
             </li>
           </ul>
           <div class="loading_mor">加载更多 </div>
         </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+    }
+  },
+  methods: {
+  }
+}
+</script>
