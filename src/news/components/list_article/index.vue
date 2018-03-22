@@ -3,7 +3,7 @@
         <div class="article_box">
           <ul class="article_list">
             <li>
-              <router-link to="detaile">
+              <router-link :to="{path:'detaile',query:{id:1}}">
                 <img class="img" src="../../common/images/img/banner1.jpg" alt="">
                 <div class="article_content">
                   <h2 class="article_title">36氪独家 | 区块链公司「布比」完成1亿元A轮融资，深耕“区块链+供应链金融”新业态</h2>

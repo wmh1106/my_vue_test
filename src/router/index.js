@@ -20,6 +20,7 @@ import market from '@/news/market'
 import login from '@/news/login'
 import register from '@/news/register'
 import password from '@/news/password'
+import detaile from '@/news/detaile'
 
 Vue.use(Router)
 
@@ -90,6 +91,10 @@ export default new Router({
       path: 'password',
       name: 'password',
       component: password
+    }, {
+      path: 'detaile',
+      name: 'detaile',
+      component: detaile
     }]
   }]
 })
