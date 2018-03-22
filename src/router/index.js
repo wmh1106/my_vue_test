@@ -11,6 +11,7 @@ import radioVue from '@/components/miaov/6_radio.vue'
 import grade from '@/components/miaov/7_grade.vue'
 import todolist from '@/components/todolist.vue'
 import miaovList from '@/components/miaovList.vue'
+import rightMenu from '@/components/miaov/8_right_menu.vue'
 
 // 项目：新闻站
 import news from '@/news'
@@ -28,41 +29,46 @@ export default new Router({
   mode: 'history',
   linkActiveClass: 'active',
   routes: [{
-    path: '/miaov/1_vue_select',
-    name: 'vueSelect',
-    component: vueSelect
-  }, {
-    path: '/miaov/2_qq_list',
-    name: 'qqList',
-    component: qqList
-  }, {
-    path: '/miaov/3_message_board',
-    name: 'messageBoard',
-    component: messageBoard
-  }, {
-    path: '/miaov/4_swiper',
-    name: 'vueSwiper',
-    component: vueSwiper
-  }, {
-    path: '/miaov/5_list_show',
-    name: 'vueSelect2',
-    component: vueSelect2
-  }, {
-    path: '/miaov/6_radio',
-    name: 'radioVue',
-    component: radioVue
-  }, {
-    path: '/miaov/7_grade',
-    name: 'grade',
-    component: grade
-  }, {
-    path: '/todolist',
-    name: 'todolist',
-    component: todolist
-  }, {
     path: '/miaovList',
     name: 'miaovList',
-    component: miaovList
+    component: miaovList,
+    children: [{
+      path: '/miaov/1_vue_select',
+      name: 'vueSelect',
+      component: vueSelect
+    }, {
+      path: '/miaov/2_qq_list',
+      name: 'qqList',
+      component: qqList
+    }, {
+      path: '/miaov/3_message_board',
+      name: 'messageBoard',
+      component: messageBoard
+    }, {
+      path: '/miaov/4_swiper',
+      name: 'vueSwiper',
+      component: vueSwiper
+    }, {
+      path: '/miaov/5_list_show',
+      name: 'vueSelect2',
+      component: vueSelect2
+    }, {
+      path: '/miaov/6_radio',
+      name: 'radioVue',
+      component: radioVue
+    }, {
+      path: '/miaov/7_grade',
+      name: 'grade',
+      component: grade
+    }, {
+      path: '/miaov/8_right_menu',
+      name: 'rightMenu',
+      component: rightMenu
+    }, {
+      path: '/todolist',
+      name: 'todolist',
+      component: todolist
+    }]
   }, {
     path: '/news',
     name: 'news',
@@ -96,5 +102,8 @@ export default new Router({
       name: 'detaile',
       component: detaile
     }]
+  }, {
+    path: '/',
+    component: miaovList
   }]
 })

@@ -15,11 +15,12 @@
       <br />
       <router-link to="/miaov/7_grade">7 评分</router-link>
       <br />
-      <router-link to="/todolist">8 todolist</router-link>
+      <router-link to="/todolist">todolist</router-link>
       <br />
+      <router-link to="/miaov/8_right_menu">8_right_menu</router-link>
     </div>
 
-    <div style="width:550px; margin:0 auto;">
+    <div style="width:550px; margin:0 auto; border:1px solid red">
       <router-view />
     </div>
   </div>
